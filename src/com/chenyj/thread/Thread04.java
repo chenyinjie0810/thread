@@ -31,7 +31,7 @@ class user implements Runnable{
 
     @Override
     public void run() {
-      /* lock.lock();*/
+       lock.lock();
         for (int i = 0; i < 3 ; i++) {
             try {
                 Thread.sleep(1000);
@@ -41,6 +41,6 @@ class user implements Runnable{
             balance+=1000;
             System.out.println(Thread.currentThread().getName()+"存入了"+1000+",余额是"+balance);
         }
-       /* lock.unlock();*/
+        lock.unlock();
     }
 }
