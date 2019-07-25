@@ -14,6 +14,7 @@ public class Map01 {
 
     @Test
     public void test01(){
+        Set set=new TreeSet();
         Map<String,Object> map=new Hashtable<>();
         Set<String> stringSets= map.keySet();
         map.put("1","你好");
