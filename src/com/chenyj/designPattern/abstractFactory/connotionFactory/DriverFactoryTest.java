@@ -15,11 +15,17 @@ public class DriverFactoryTest {
         comnand.comnand();
     }
 }
-//创建连接
+
+/**
+ * 创建连接
+ */
 interface IConnection{
     void connect();
 }
-//执行操作
+
+/**
+ * 执行操作
+ */
 interface IComnand{
     void comnand();
 }
